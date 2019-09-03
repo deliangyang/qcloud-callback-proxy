@@ -1,0 +1,39 @@
+uri = "/cb/qcloud/im"             # 回调地址
+method = "POST"                         # 回调请求方法
+port = ":5050"                          # 代理服务器端口
+strategy = "length"                     # ID前缀或者长度 length|prefix
+
+[[envs]]
+id = "20"                               # 用户ID前缀
+length = 9                              # ID长度
+url = "https://dev-ck.example.com"      # 回调host
+
+[[envs]]
+id = "20"
+length = 9
+url = "https://new-dev-ck.example.com"
+
+[[envs]]
+id = "30"
+length = 8
+url = "https://test-ck.example.com"
+
+[[envs]]
+id = "30"
+length = 8
+url = "https://new-test-ck.example.com"
+
+[[envs]]
+id = "30"
+length = 8
+url = 'http://dev-cool.example.com'
+
+[[envs]]
+id = "30"
+length = 9
+url = 'https://a-api.example.com'
+
+[[envs]]
+id = "10"
+length = 10
+url = 'https://a-example.example.com'
